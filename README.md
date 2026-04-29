@@ -16,18 +16,19 @@ Highly privilegded user
 useradd -m pwnuser -s /bin/bash (or any other username)
 passwd <Specify your own passwd>
 ```
+
 ```
--s 
+-s = Configures a Shell type for the given user.
 ```
--> Configures a Shell type for the given user.
+
 ```
--m 
+-m = Creates home directory for the given user.
 ```
--> Creates home directory for the given user.
+
 Here, We create two users who have there home directory's and have different permissions.
 We can # sudo do to configure a root level change in the system.
 
-# SSH keys Generation and Configuration
+# SSH Keys Generation and Configuration
 
 Firstly, we switch to the user we want to create **SSH Keys**.
 
@@ -39,4 +40,4 @@ Creating the SSH Key using **SSH-Keygen** command
 ```bash
 ssh-keygen -t rsa -d 4096 -C "boot2root@example.com"
 ```
- 
+
