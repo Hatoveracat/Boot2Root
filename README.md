@@ -7,9 +7,12 @@ and learn yourself how to SSH secure your linux systems and mitigate breaches.
 # Creation of users
 
 Low priviledged user
-<useradd breacher>
-<passwd Specify your own passwd>
-
+```bash
+  useradd breacher (or any other username)
+  passwd <Specify your own passwd>
+```
 Highly privilegded user
-<useradd pwnuser>
-<passwd Specify your own passwd>
+```bash
+  useradd pwnuser (or any other username)
+  passwd <Specify your own passwd>
+```
