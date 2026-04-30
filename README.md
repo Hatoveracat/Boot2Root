@@ -4,6 +4,8 @@ A Boot2Root Machine built to give you a real world hacking experience and showca
 This is a repository where I have uploaded all the files and the design pdf of the Boot2Root Machine and below are commands so that you can configure 
 and learn yourself how to SSH secure your linux systems and mitigate breaches.
 
+# Server Download
+You can download the server [here](https://releases.ubuntu.com/22.04/ubuntu-22.04.5-live-server-amd64.iso)
 # Creation of users
 
 **Low priviledged user**
@@ -114,4 +116,13 @@ The above two commands open two extra ports in the system.
 ```bash
 netstat -ltpn
 ```
-**Netstat** displays all open ports on a os.
+**Netstat** displays all listening ports.
+
+# Verify by connecting with netcat or nc
+```bash
+nc <ip address of the server> <port>
+```
+
+# Conclusion
+Many results can be seen and found when we deploy the system on a CTF challenge as it can showcase the level of 
+skills our attackers can have on breaching this machine.We can harden this machine more to test and understand how attackks are done to the system.
