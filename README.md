@@ -95,5 +95,20 @@ sudo apt-get install socat
 ```
 Port opening with multi-threading
 ```bash
-
+socat TCP-LISTEN:(666 or your choice),reuseaddr,fork EXEC:"python3 /opt/keyfind.py"
+socat TCP-LISTEN:(1001 or your choice),reuseaddr,fork EXEC:"python3 /opt/userfind.py"
 ```
+**sudo** is required to open ports.
+
+The above two commands open two extra ports in the system.
+
+**reuseaddr** = Allows for multi-threading.
+**fork** = Repeats the same command in **EXEC** for each thread.
+**EXEC** = Executes the lines in between quotes.
+**TCP-LISTEN** =  Opens a TCP Socket.
+
+# Verify for the ports got opened or not
+```bash
+netstat -ltpn
+```
+**Netstat** displays all open ports on a os.
